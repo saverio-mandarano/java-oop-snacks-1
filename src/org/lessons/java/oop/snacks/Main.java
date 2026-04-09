@@ -5,6 +5,24 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         Student harry = new Student("harry", "potter", 20);
+        Student ron = new Student("ron", "weasley", 20);
+
+        Student[] bestStudents = new Student[2];
+        bestStudents[0] = ron;
+        bestStudents[1] = harry;
+
+        StudentRegistry registry = new StudentRegistry();
+        registry.setRegistry(bestStudents);
+
+        System.out.println(registry);
+
+        System.out.println("Stampo gli studenti con getRegistry:");
+        for (Student s : registry.getRegistry()) {
+            System.out.println(s.getStudentInfo());
+        }
+
+        registry.addStudent(new Student("saverio", "mandarano", 26));
+        registry.printStudents();
 
         // System.out.println(harry.getStudentInfo());
 
@@ -28,5 +46,6 @@ public class Main {
 
         // BankAccount pasquale = new BankAccount();
         // System.err.println(pasquale.getAccountNumber());
+
     }
 }
