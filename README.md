@@ -21,3 +21,10 @@
 2. Utilizza un array privato per memorizzare oggetti Studente (creati nello Snack 1).
 3. Implementa un costruttore senza parametri per inizializzare il registro vuoto e un metodo pubblico per aggiungere studenti al registro.
 4. Aggiungi un metodo che stampi la lista degli studenti, senza utilizzare metodi helper.
+
+## Snack: Move Zero to End
+
+1. Crea una classe Array che rappresenti un array di interi.
+2. Utilizza un array privato di tipo `int[]` per memorizzare i valori.
+3. Implementa un costruttore che accetta un array di interi e inizializza l’attributo interno della classe.
+4. Aggiungi un metodo pubblico `moveZeroToTheEnd()` che sposta tutti gli zeri alla fine dell’array mantenendo l’ordine degli altri elementi.
