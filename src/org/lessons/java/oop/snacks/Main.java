@@ -14,15 +14,15 @@ public class Main {
         StudentRegistry registry = new StudentRegistry();
         registry.setRegistry(bestStudents);
 
-        System.out.println(registry);
+        // System.out.println(registry);
 
-        System.out.println("Stampo gli studenti con getRegistry:");
-        for (Student s : registry.getRegistry()) {
-            System.out.println(s.getStudentInfo());
-        }
+        // System.out.println("Stampo gli studenti con getRegistry:");
+        // for (Student s : registry.getRegistry()) {
+        // System.out.println(s.getStudentInfo());
+        // }
 
-        registry.addStudent(new Student("saverio", "mandarano", 26));
-        registry.printStudents();
+        // registry.addStudent(new Student("saverio", "mandarano", 26));
+        // registry.printStudents();
 
         // System.out.println(harry.getStudentInfo());
 
@@ -47,5 +47,12 @@ public class Main {
         // BankAccount pasquale = new BankAccount();
         // System.err.println(pasquale.getAccountNumber());
 
+        // snack-array
+        int[] arrayEsercizio = new int[] { 0, 1, 2, 0, 3, 4, 0, 5, 6, 7, 0, 0, 8, 9 };
+
+        Array arr1 = new Array(arrayEsercizio);
+        System.out.println(arr1);
+        arr1.moveZeroToTheEnd();
+        System.out.println(arr1);
     }
 }
